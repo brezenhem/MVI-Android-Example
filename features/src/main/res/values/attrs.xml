@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="ToolbarView" format="reference" />
+
+    <declare-styleable name="ToolbarView">
+        <attr name="title" format="string" />
+        <attr name="titleColor" format="color" />
+    </declare-styleable>
+
+</resources>

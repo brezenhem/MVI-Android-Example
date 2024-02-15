@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set a specific background color -->
+        <item name="windowSplashScreenBackground">@color/color_primary</item>
+        <!-- Set an icon and it will be shown in the center of screen -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_logo</item>
+        <!-- Set the theme of the Activity that follows the splash screen -->
+        <item name="postSplashScreenTheme">@style/Theme.SoftPos</item>
+    </style>
+</resources>

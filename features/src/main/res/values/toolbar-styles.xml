@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base app toolbar styles -->
+    <style name="Widget.App.Toolbar" parent="Widget.Core.Toolbar">
+
+    </style>
+
+</resources>

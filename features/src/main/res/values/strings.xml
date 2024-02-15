@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Navigation menu -->
+    <string name="nav_transactions_title">Transactions</string>
+    <string name="nav_history_title">History</string>
+    <string name="nav_management_title">Management</string>
+    <string name="nav_more_title">More</string>
+
+    <!-- Screen login -->
+    <string name="login_welcome">Welcome!</string>
+    <string name="login_sub_title">Welcome back dear user\nplease login</string>
+    <string name="login_email_address_hint">Email Address</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_log_in">Log In</string>
+    <string name="login_forget_password">Forget password?</string>
+
+    <!-- Screen transactions -->
+    <string name="transactions_title">Transactions</string>
+    <string name="transactions_history_title">History</string>
+    <string name="transactions_total">Total Amount for</string>
+
+    <!-- Screen history -->
+
+    <!-- Screen management -->
+    <string name="management_title">Management</string>
+
+    <!-- Screen more -->
+    <string name="more_title">More</string>
+
+</resources>

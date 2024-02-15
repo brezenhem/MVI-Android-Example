@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mada.softpos.core.ui.view.MotionToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layoutDescription="@xml/motion_scene_amount_header"
+    android:minHeight="@dimen/_72dp"
+    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorPrimary"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_app_header" />
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/Widget.App.TextView.Heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:text="$2,234.23"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        style="@style/Widget.App.TextView.Heading7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/transactions_total"
+        android:textColor="@color/white_90"
+        app:layout_constraintTop_toBottomOf="@+id/label"/>
+
+</com.mada.softpos.core.ui.view.MotionToolbar>

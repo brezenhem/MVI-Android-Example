@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navApp"
+    app:startDestination="@+id/feature_transactions_graph">
+
+    <include
+        android:id="@+id/transactions_graph"
+        app:graph="@navigation/transactions_graph" />
+
+    <include
+        android:id="@+id/history_graph"
+        app:graph="@navigation/history_graph" />
+
+    <include
+        android:id="@+id/management_graph"
+        app:graph="@navigation/management_graph" />
+
+    <include
+        android:id="@+id/more_graph"
+        app:graph="@navigation/more_graph" />
+
+</navigation>

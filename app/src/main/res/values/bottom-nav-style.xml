@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Core.BottomNavigationView">
+        <item name="backgroundTint">@color/color_surface</item>
+        <item name="itemIconTint">@drawable/bottom_nav_color_selector</item>
+        <item name="itemTextColor">@drawable/bottom_nav_color_selector</item>
+        <item name="elevation">0dp</item>
+        <item name="itemIconSize">@dimen/_26dp</item>
+    </style>
+
+</resources>

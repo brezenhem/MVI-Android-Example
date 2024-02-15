@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="NewApi">
+
+    <!-- Primary button style -->
+    <style name="Widget.App.Button" parent="Widget.Core.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ButtonShapeAppearance</item>
+        <item name="android:height">@dimen/_52dp</item>
+        <item name="android:paddingStart">@dimen/_24dp</item>
+        <item name="android:paddingEnd">@dimen/_24dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+    </style>
+
+    <!-- Secondary button style -->
+    <style name="Widget.App.Button.Outlined" parent="Widget.Core.Button.OutlinedButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.Outlined</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ButtonShapeAppearance</item>
+        <item name="android:height">@dimen/_52dp</item>
+        <item name="android:paddingStart">@dimen/_24dp</item>
+        <item name="android:paddingEnd">@dimen/_24dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+    </style>
+
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/open_sans_semi_bold</item>
+        <item name="android:fontFamily">@font/open_sans_semi_bold</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">32dp</item>
+    </style>
+
+    <style name="ButtonShapeAppearance">
+        <item name="cornerSize">@dimen/_32dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button" parent="">
+        <item name="colorPrimary">@color/color_button</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button.Outlined" parent="">
+        <item name="colorPrimary">@color/color_button_outlined</item>
+    </style>
+
+    <!-- Customize your style here -->
+
+    <color name="color_button">#2B63B6</color>
+    <color name="color_button_outlined">#80000000</color>
+
+</resources>
+

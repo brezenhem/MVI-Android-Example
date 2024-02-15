@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.dagger.hilt.android' version "2.47" apply false
+    id 'org.jetbrains.kotlin.kapt'
+}
+
+apply from: '../versions.gradle'
+
+android {
+    namespace 'com.mada.softpos'
+    compileSdk build_versions.compile_sdk
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation deps.dagger.runtime
+    implementation deps.dagger.android
+
+    implementation deps.dagger_hilt.hilt
+    kapt deps.dagger_hilt.hilt_compiler
+
+    implementation deps.splashscreen.splash
+
+    implementation project(path: ':core')
+    implementation project(path: ':features')
+
+    kapt deps.dagger.compiler
+}
+
+kapt {
+    correctErrorTypes = true
+    javacOptions {
+        option("-Adagger.fastInit=ENABLED")
+        option("-Adagger.hilt.android.internal.disableAndroidSuperclassValidation=true")
+    }
+}

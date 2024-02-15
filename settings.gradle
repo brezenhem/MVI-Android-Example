@@ -1,0 +1,32 @@
+pluginManagement {
+    apply from: 'versions.gradle'
+
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    plugins {
+        id 'com.android.application' version '7.4.2'
+        id 'com.android.library' version versions.gradle_plugin
+        id 'org.jetbrains.kotlin.android' version versions.kotlin
+        id 'org.jetbrains.kotlin.kapt' version versions.kotlin
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "SoftPos"
+
+include ':app'
+include ':app_entry'
+include ':core'
+include ':di'
+include ':data'
+include ':domain'
+include ':features'

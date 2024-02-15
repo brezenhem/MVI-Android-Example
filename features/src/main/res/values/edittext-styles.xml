@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="NewApi">
+
+    <!-- Base app button styles -->
+    <style name="Widget.App.TextInputLayout" parent="Widget.Core.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/color_text_hint</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.FilledBox" parent="Widget.Core.TextInputLayout.FilledBox">
+        <item name="android:textColorHint">@color/color_text_hint</item>
+    </style>
+
+    <!-- Customize your style here -->
+
+    <color name="color_text_hint">#93A5BD</color>
+</resources>
+

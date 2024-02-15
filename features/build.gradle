@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.dagger.hilt.android' version "2.47" apply false
+    id 'org.jetbrains.kotlin.kapt'
+}
+
+apply from: '../versions.gradle'
+
+android {
+    namespace 'com.mada.features'
+    compileSdk build_versions.compile_sdk
+
+    defaultConfig {
+        minSdk build_versions.min_sdk
+        targetSdk build_versions.target_sdk
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation deps.dagger.runtime
+    implementation deps.dagger.android
+
+    implementation deps.dagger_hilt.hilt
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    //implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    kapt deps.dagger_hilt.hilt_compiler
+
+    implementation deps.splashscreen.splash
+    implementation deps.constraint.constraint
+
+    implementation deps.room.room_paging
+    implementation deps.paging.paging
+
+    implementation deps.swipe_refresh.swiperefresh
+
+    implementation project(path: ':core')
+    implementation project(path: ':domain')
+
+    kapt deps.dagger.compiler
+}
+
+kapt {
+    correctErrorTypes = true
+    kapt {
+        correctErrorTypes = true
+        javacOptions {
+            option("-Adagger.fastInit=ENABLED")
+            option("-Adagger.hilt.android.internal.disableAndroidSuperclassValidation=true")
+        }
+    }
+}

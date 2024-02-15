@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Core bottom navigation view style -->
+    <style name="Widget.Core.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored"/>
+
+    <!-- Core button style -->
+    <style name="Widget.Core.Button" parent="Widget.MaterialComponents.Button"/>
+    <style name="Widget.Core.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <!-- Core Text View style -->
+    <style name="Widget.Core.TextView" parent="Widget.MaterialComponents.TextView"/>
+
+    <!-- Core Edit Text style -->
+    <style name="Widget.Core.TextInputLayout.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox"/>
+    <style name="Widget.Core.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+    <!-- Core Card View style -->
+    <style name="Widget.Core.CardView" parent="Widget.MaterialComponents.CardView"/>
+
+    <!-- Core Toolbar style -->
+    <style name="Widget.Core.Toolbar" parent="Widget.MaterialComponents.Toolbar"/>
+
+</resources>

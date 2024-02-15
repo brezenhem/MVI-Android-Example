@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feature_transactions_graph"
+    app:startDestination="@+id/transactions_screen">
+
+    <fragment
+        android:id="@+id/transactions_screen"
+        android:name="com.mada.features.transactions_feature.main.TransactionsScreen"
+        tools:layout="@layout/screen_transactions" />
+
+</navigation>

@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- App layout sizes -->
+    <dimen name="content_horizontal_percentage">.2</dimen>
+    <dimen name="menu_item_size">130dp</dimen>
+    <dimen name="coordinator_app_bar_height">160dp</dimen>
+    <dimen name="constraint_app_bar_height">180dp</dimen>
+</resources>

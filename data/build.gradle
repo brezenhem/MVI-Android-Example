@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.kapt'
+}
+
+apply from: '../versions.gradle'
+
+android {
+    namespace 'com.mada.softpos.data'
+    compileSdk build_versions.compile_sdk
+}
+
+dependencies {
+
+    api deps.coroutines
+    api deps.okhttp3.okhttp
+    api deps.okhttp3.logging_interceptor
+    api deps.retrofit2.retrofit
+    api deps.retrofit2.adapter_rxjava2
+    api deps.retrofit2.converter_gson
+
+    implementation deps.room.room
+    implementation deps.room.room_paging
+    implementation deps.paging.paging
+
+    kapt deps.room.room_compiler
+
+    implementation deps.dagger.runtime
+    implementation deps.dagger.android
+
+    implementation project(path: ':core')
+
+    kapt deps.dagger.compiler
+}

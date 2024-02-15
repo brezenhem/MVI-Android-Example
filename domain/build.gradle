@@ -1,0 +1,19 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+apply from: '../versions.gradle'
+
+android {
+    namespace 'com.mada.softpos.domain'
+    compileSdk build_versions.compile_sdk
+}
+
+dependencies {
+
+    implementation deps.paging.paging
+
+    implementation project(path: ':core')
+    implementation project(path: ':data')
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base app CardView styles -->
+    <style name="Widget.App.CardView" parent="Widget.Core.CardView">
+        <item name="shapeAppearance">@style/ShapeAppearanceOverlay.CardView</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardElevation">@dimen/_8dp</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/color_card_view_elevation</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/color_card_view_elevation</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.CardView" parent="">
+        <item name="cornerSize">12dp</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/white</item>
+    </style>
+
+    <color name="color_card_view_elevation">#40000000</color>
+
+</resources>
